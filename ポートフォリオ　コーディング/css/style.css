@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* cssリセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ヘッダー */
+h1 {
+    font-size: 36px;
+}
+.header_title {
+    text-align: center;
+}
+
+.grandmenu {
+    text-align: right;
+}
+
+h2 {
+    font-size: 38px;
+    letter-spacing: 1em;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 67px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+/* 固定ヘッダー */
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    /* text-decoration: underline  2px; */
+    border-bottom: solid 2px black;
+}
+.header_logo {
+    font-size: 38px;
+}
+
+.header_grandmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.header_grandmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_grandmenu ul li {
+    margin-right: 83px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* about */
+
+.about_title {
+    text-align: center;
+}
+.about_concept {
+    font-size: 47px;
+    margin-bottom: 53px;
+    color: white;
+}
+
+.about_box {
+    background: #349ace;
+    width: 1196px;
+    height: 388px;
+}
+
+.about_introduce {
+    font-size: 16px;
+    line-height: 1.75;
+    color: white;
+}
+
+.about_content {
+    text-align: left;
+    padding-left: 174px;
+
+    padding-top: 10px;
+    position: relative;
+    top: -300px;
+}
+
+/* design */
+.design_title {
+    text-align: center;
+}
+/* workflow */
+.workflow_title {
+    text-align: center;
+}
+/* ontact  */
+
+/* フッター */
