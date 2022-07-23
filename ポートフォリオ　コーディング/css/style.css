@@ -70,6 +70,7 @@ h2 {
 .subtitle {
     font-size: 16px;
     margin-bottom: 67px;
+    line-height: 1.75;
 }
 
 .slider img {
@@ -119,11 +120,18 @@ h2 {
     color: white;
 }
 
-.about_box {
+.about_content {
+    background: #349ace;
+    padding: 74px 0px 80px 174px;
+    margin-right: 170px;
+    margin-bottom: 47px;
+}
+
+/* .about_box {
     background: #349ace;
     width: 1196px;
     height: 388px;
-}
+} */
 
 .about_introduce {
     font-size: 16px;
@@ -131,23 +139,151 @@ h2 {
     color: white;
 }
 
-.about_content {
+.about_details {
+    background: #c2c2c2;
+    padding: 21px 125px;
+    border-radius: 100vh;
+    height: 100px;
+}
+.about_details1 {
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+/* .about_content {
     text-align: left;
     padding-left: 174px;
 
     padding-top: 10px;
     position: relative;
     top: -300px;
-}
+} */
 
 /* design */
 .design_title {
     text-align: center;
 }
+
+.design_box {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 286px;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+
+.design_box div {
+    height: 286px;
+    width: 286px;
+    margin-bottom: 50px;
+    background: #c2c2c2;
+    max-width: 30%;
+}
+
+.design_whole {
+    margin-bottom: 500px;
+}
+
+.design_details {
+    background: #c2c2c2;
+    padding: 21px 125px;
+    border-radius: 100vh;
+    height: 100px;
+}
+.design_details1 {
+    text-align: center;
+    margin-bottom: 66px;
+}
+
 /* workflow */
+
+.workflow_whole1 {
+    background: #ffd500;
+}
+
+.workflow_whole {
+    display: flex;
+    justify-content: space-between;
+}
+
+.workflow_step {
+    margin-right: 30px;
+    text-align: center;
+    width: 20%;
+}
+
+.workflow_step :last-child {
+    margin-right: 0;
+}
+/* 4だけ右の余白を無くしたい */
+
 .workflow_title {
     text-align: center;
 }
-/* ontact  */
+
+.arrow_whole {
+    margin-bottom: 20px;
+}
+
+.arrow_right {
+    display: inline-block;
+    height: 5px;
+    width: 120px;
+    background-color: black;
+    position: relative;
+    /* top: 40px; */
+}
+
+.arrow_right:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left: 10px solid black;
+    left: 120px;
+    top: -7.5px;
+}
+
+/* .arrow_right {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    border-left: 4px solid #000;
+    border-bottom: 4px solid #000;
+    transform: rotate(225deg);
+} */
+
+.workflow_number {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.workflow_number span {
+    font-size: 52px;
+}
+
+.workflow_subtitle {
+    font-size: 23px;
+    line-height: 1.33;
+}
+
+.workflow_contents {
+    font-size: 15px;
+    line-height: 1.75;
+    text-align: left;
+}
+/* 50vw */
+
+/* contact  */
+.contact_title {
+    text-align: center;
+}
+
+.contact_1 {
+    color: #ffaeba;
+}
 
 /* フッター */
