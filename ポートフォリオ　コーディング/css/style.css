@@ -52,6 +52,10 @@ img {
 /* ヘッダー */
 h1 {
     font-size: 36px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; */
 }
 .header_title {
     text-align: center;
@@ -77,9 +81,21 @@ h2 {
     width: 100%;
 }
 
+.header_wrap {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 177px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 /* 固定ヘッダー */
 
-.header_wrap {
+.header_wrap2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,7 +104,8 @@ h2 {
     margin-bottom: 100px;
     padding-bottom: 10px;
     /* text-decoration: underline  2px; */
-    border-bottom: solid 2px black;
+    /* border-bottom: solid 2px black; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .header_logo {
     font-size: 38px;
@@ -114,6 +131,15 @@ h2 {
 .about_title {
     text-align: center;
 }
+
+.about_photo {
+    width: 333px;
+    text-align: right;
+    position: relative;
+    margin: 0 0 120px auto;
+    top: -450px;
+}
+
 .about_concept {
     font-size: 47px;
     margin-bottom: 53px;
@@ -124,7 +150,10 @@ h2 {
     background: #349ace;
     padding: 74px 0px 80px 174px;
     margin-right: 170px;
-    margin-bottom: 47px;
+    /* margin-bottom: 47px; */
+    position: relative;
+    top: 30px;
+    right: 30px;
 }
 
 /* .about_box {
@@ -168,7 +197,6 @@ h2 {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    height: 286px;
     max-width: 960px;
     flex-wrap: wrap;
 }
@@ -182,7 +210,7 @@ h2 {
 }
 
 .design_whole {
-    margin-bottom: 500px;
+    margin-bottom: 50px;
 }
 
 .design_details {
@@ -286,4 +314,182 @@ h2 {
     color: #ffaeba;
 }
 
+/* お問い合わせフォーム */
+
+/* テスト */
+.Form {
+    margin-top: 80px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    max-width: 720px;
+}
+@media screen and (max-width: 767px) {
+    .Form {
+        margin-top: 40px;
+    }
+}
+.Form-Item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        flex-wrap: wrap;
+    }
+}
+/* .Form-Item:nth-child(5) {
+} */
+.Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+}
+.Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Label.isMsg {
+        margin-top: 0;
+    }
+}
+.Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    font-size: 14px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Label-Required {
+        border-radius: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 32px;
+        font-size: 10px;
+    }
+}
+.Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* margin-left: 40px; */
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Input {
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+.Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /* margin-left: 40px; */
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Item-Textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+        font-size: 15px;
+    }
+}
+.Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+    .Form-Btn {
+        margin-top: 24px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 160px;
+        font-size: 16px;
+    }
+}
+
+/* テスト */
+
 /* フッター */
+.footer_whole {
+    display: flex;
+}
+
+.footer_logo2 {
+    font-size: 38px;
+}
+
+.footer_wrap p {
+    font-size: 13px;
+}
+
+.footer_menu {
+    font-size: 26px;
+}
+
+/* スライダー用 */
+.slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    color: #fff;
+}
+
+.slick-dots li button:before {
+    color: #fff;
+}
