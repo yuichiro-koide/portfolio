@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+/* cssリセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ヘッダー */
+
+.header_wrap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    /* text-decoration: underline  2px; */
+    /* border-bottom: solid 2px black; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.header_logo {
+    font-size: 38px;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.header_grandmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.header_grandmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_grandmenu ul li {
+    margin-right: 83px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 38px;
+    letter-spacing: 1em;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 67px;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.subtitle:last-child {
+    margin-bottom: 10px;
+}
+
+/* about */
+
+.about_content {
+    background: #349ace;
+    padding-top: 52px;
+    padding-bottom: 58px;
+    margin-bottom: 85px;
+}
+
+/* skills */
+
+.skills_wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+.skills_wrap:last-child {
+    flex-wrap: end;
+}
+
+.skills_wrap2 {
+    display: flex;
+}
+
+.skills_wrap2 ul {
+    display: block;
+    padding-left: 55px;
+    /* line-height: 1.75; liでなく、Pとかで<br>とかで改行をしていたらいけた？*/
+}
+
+.skills_design ul li {
+    padding-bottom: 20px;
+}
+
+.skills_wrap img {
+    width: 175px;
+}
+.skills_title {
+    color: #009bce;
+    font-size: 35px;
+    padding-bottom: 22px;
+    padding-left: 50px;
+}
+
+/* contact */
+
+.contact_title {
+    border: 1px solid black;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    margin-bottom: 85px;
+}
+
+/* フッター */
+
+.footer_whole1 {
+    background: #9b9b9b;
+    padding-top: 114px;
+    padding-bottom: 52px;
+    color: #fff;
+}
+
+.footer_whole {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer_logo {
+    font-size: 38px;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 10px;
+    /* 上の数値が変 */
+}
+
+.footer_wrap p {
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer_img {
+    text-align: center;
+}
+
+.footer_menu {
+    font-size: 26px;
+}
+
+.footer_menu ul {
+    display: flex;
+}
+
+.footer_menu ul li {
+    padding-right: 81px;
+}
+
+.footer_menu ul li:last-child {
+    padding-right: 0px;
+}
+
+.footer_designname {
+    text-align: center;
+    font-size: 15px;
+}

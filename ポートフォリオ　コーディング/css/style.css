@@ -52,17 +52,16 @@ img {
 /* ヘッダー */
 h1 {
     font-size: 36px;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%; */
 }
 .header_title {
     text-align: center;
+    margin: 0 auto;
+    color: #fff;
 }
 
 .grandmenu {
     text-align: right;
+    color: #fff;
 }
 
 h2 {
@@ -85,12 +84,13 @@ h2 {
     /* display: flex; */
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     margin-top: 177px;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 100;
 }
 
 /* 固定ヘッダー */
@@ -99,7 +99,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
     margin-bottom: 100px;
     padding-bottom: 10px;
@@ -109,6 +109,8 @@ h2 {
 }
 .header_logo {
     font-size: 38px;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .header_grandmenu {
@@ -135,7 +137,7 @@ h2 {
 .about_photo {
     width: 333px;
     text-align: right;
-    position: relative;
+    position: absolute;
     margin: 0 0 120px auto;
     top: -450px;
 }
@@ -152,8 +154,8 @@ h2 {
     margin-right: 170px;
     /* margin-bottom: 47px; */
     position: relative;
-    top: 30px;
-    right: 30px;
+    /* top: 30px;
+    right: 30px; */
 }
 
 /* .about_box {
@@ -228,11 +230,15 @@ h2 {
 
 .workflow_whole1 {
     background: #ffd500;
+    margin-top: -10px;
+    margin-bottom: -10px;
 }
 
 .workflow_whole {
     display: flex;
     justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .workflow_step {
@@ -308,6 +314,7 @@ h2 {
 /* contact  */
 .contact_title {
     text-align: center;
+    margin-top: 30px;
 }
 
 .contact_1 {
@@ -316,13 +323,13 @@ h2 {
 
 /* お問い合わせフォーム */
 
-/* テスト */
 .Form {
     margin-top: 80px;
     /* margin-left: auto;
     margin-right: auto; */
     margin: 0 auto;
     max-width: 720px;
+    margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
     .Form {
@@ -461,23 +468,58 @@ h2 {
     }
 }
 
-/* テスト */
-
 /* フッター */
-.footer_whole {
-    display: flex;
+.footer_whole1 {
+    background: #9b9b9b;
+    padding-top: 114px;
+    padding-bottom: 52px;
+    color: #fff;
 }
 
-.footer_logo2 {
+.footer_whole {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer_logo {
     font-size: 38px;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-bottom: 10px;
+    /* 上の数値が変 */
 }
 
 .footer_wrap p {
     font-size: 13px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer_img {
+    text-align: center;
 }
 
 .footer_menu {
     font-size: 26px;
+}
+
+.footer_menu ul {
+    display: flex;
+}
+
+.footer_menu ul li {
+    padding-right: 81px;
+}
+
+.footer_menu ul li:last-child {
+    padding-right: 0px;
+}
+
+.footer_designname {
+    text-align: center;
+    font-size: 15px;
 }
 
 /* スライダー用 */
