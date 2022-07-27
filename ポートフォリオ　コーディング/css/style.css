@@ -53,6 +53,11 @@ img {
 h1 {
     font-size: 36px;
 }
+
+.test {
+    position: relative;
+}
+
 .header_title {
     text-align: center;
     margin: 0 auto;
@@ -62,12 +67,25 @@ h1 {
 .grandmenu {
     text-align: right;
     color: #fff;
+    position: absolute;
+    bottom: 15px;
+    right: 83px;
+    z-index: 100;
+}
+
+.grandmenu li {
+    margin-bottom: 10px;
+}
+
+.grandmenu li :last-child {
+    margin-bottom: 0px;
 }
 
 h2 {
     font-size: 38px;
     letter-spacing: 1em;
     margin-bottom: 18px;
+    text-indent: 1em;
 }
 
 .subtitle {
@@ -82,15 +100,28 @@ h2 {
 
 .header_wrap {
     /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    box-sizing: border-box;
-    margin-top: 177px;
+    /* justify-content: space-between;
+    align-items: center; */
+    width: 100%;
+    /* box-sizing: border-box; */
+    /* margin-top: 177px; */
     position: absolute;
-    top: 0;
+    top: 40%;
     right: 0;
     z-index: 100;
+    transform: translateY(-50%);
+}
+
+.stickarrow {
+    width: 30px;
+    height: 8px;
+    border-bottom: 1px dashed #fff;
+    border-right: 1px dashed #fff;
+    transform: skew(45deg);
+}
+
+.grandmenu_arrows {
+    display: flex;
 }
 
 /* 固定ヘッダー */
@@ -128,6 +159,10 @@ h2 {
     font-weight: bold;
 }
 
+.header_grandmenu ul li :last-child {
+    margin-right: 0px;
+}
+
 /* about */
 
 .about_title {
@@ -139,7 +174,8 @@ h2 {
     text-align: right;
     position: absolute;
     margin: 0 0 120px auto;
-    top: -450px;
+    top: -100px;
+    right: -50px;
 }
 
 .about_concept {
@@ -156,6 +192,7 @@ h2 {
     position: relative;
     /* top: 30px;
     right: 30px; */
+    margin-right: calc(100vw-1020px) / 2;
 }
 
 /* .about_box {
@@ -166,6 +203,7 @@ h2 {
 
 .about_introduce {
     font-size: 16px;
+    /* font-size: 1.17vw; */
     line-height: 1.75;
     color: white;
 }
@@ -179,6 +217,7 @@ h2 {
 .about_details1 {
     text-align: center;
     margin-bottom: 66px;
+    padding-top: 47px;
 }
 
 /* .about_content {
@@ -237,7 +276,7 @@ h2 {
 .workflow_whole {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -403,14 +442,15 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 6px;
     /* margin-left: 40px; */
-    padding-left: 1em;
-    padding-right: 1em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
     height: 48px;
     flex: 1;
     width: 100%;
-    max-width: 410px;
+    /* max-width: 410px; */
     background: #eaedf2;
     font-size: 18px;
+    box-sizing: border-box;
 }
 @media screen and (max-width: 767px) {
     .Form-Item-Input {
@@ -425,14 +465,15 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 6px;
     /* margin-left: 40px; */
-    padding-left: 1em;
-    padding-right: 1em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
     height: 216px;
     flex: 1;
     width: 100%;
-    max-width: 410px;
+    /* max-width: 410px; */
     background: #eaedf2;
     font-size: 18px;
+    box-sizing: border-box;
 }
 @media screen and (max-width: 767px) {
     .Form-Item-Textarea {
@@ -479,7 +520,7 @@ h2 {
 .footer_whole {
     display: flex;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -503,6 +544,7 @@ h2 {
 
 .footer_menu {
     font-size: 26px;
+    /* font-size: 1.9vw; */
 }
 
 .footer_menu ul {
@@ -534,4 +576,102 @@ h2 {
 
 .slick-dots li button:before {
     color: #fff;
+}
+
+.sp_about {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 3.9vw;
+    }
+
+    /* about  */
+
+    #ABOUT {
+        display: none;
+    }
+
+    .sp_about_title {
+        text-align: center;
+    }
+
+    .sp_about {
+        display: block;
+    }
+
+    .sp_about_photo {
+        text-align: center;
+    }
+
+    .sp_about_photo img {
+        width: 204px;
+        margin-bottom: -100px;
+        margin-top: 49px;
+    }
+
+    .sp_about_content {
+        background: #349ace;
+        padding-top: 165px;
+        padding-bottom: 48px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .sp_about_concept {
+        font-size: 4.95vw;
+        padding-bottom: 36px;
+        /* text-align: center; */
+    }
+    .sp_about_introduce {
+        font-size: 1.95vw;
+        line-height: 1.86;
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .sp_about_details {
+        background: #c2c2c2;
+        padding: 21px 125px;
+        border-radius: 100vh;
+        height: 100px;
+    }
+    .sp_about_details1 {
+        text-align: center;
+        margin-bottom: 66px;
+        padding-top: 47px;
+    }
+
+    /* design  */
+
+    /* workflow */
+
+    .workflow_whole {
+        display: block;
+    }
+
+    .workflow_step {
+        margin-right: 30px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .workflow_contents {
+        font-size: 1.9vw;
+        line-height: 1.75;
+        text-align: center;
+        /* いい感じで改行したい */
+    }
+
+    /* contact  */
+
+    /* フッター */
+
+    .sp_footer_logo {
+        text-align: center;
+        font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+            "游ゴシック", "Yu Gothic", sans-serif;
+    }
 }

@@ -22,43 +22,49 @@
 
 <body>
     <!-- ヘッダー -->
-    <div class="header_wrap">
-        <div class="header_title">
-            <h1>どんな印象も思いのままに</h1>
-            <p>Any impression is at your disposal</p>
+    <header class="test">
+        <div class="header_wrap">
+            <div class="header_title">
+                <h1>どんな印象も思いのままに</h1>
+                <p>Any impression is at your disposal</p>
+            </div>
         </div>
+
         <ul class="grandmenu">
-            <li><a href="#ABOUT">about</a></li>
-            <li><a href="#DESIGN">design</a></li>
-            <li><a href="#WORKFLOW">workflow</a></li>
-            <li><a href="#CONTACT">contact</a></li>
+            <div class="grandmenu_arrows">
+                <li><a href="#ABOUT">about</a></li>
+                <div class="stickarrow"></div>
+            </div>
+            <div class="grandmenu_arrows">
+                <li><a href="#DESIGN">design</a></li>
+                <div class="stickarrow"></div>
+            </div>
+            <div class="grandmenu_arrows">
+                <li><a href="#WORKFLOW">workflow</a></li>
+                <div class="stickarrow"> </div>
+            </div>
+            <div class="grandmenu_arrows">
+                <li><a href="#CONTACT">contact</a></li>
+                <div class="stickarrow"></div>
+            </div>
         </ul>
-        <!-- <div>
-            <ul class="slider">
-                <li><img srcset="images/アセット2.png" alt="イラストを描いている途中"></li>
-                <li><img srcset="images/アセット3.png" alt="塗りかけのペンキ"></li>
-            </ul>
-        </div> -->
-    </div>
 
-    <ul class="slider">
-        <li>
-            <picture>
-                <source srcset="images/アセット15.png" media="(max-width:767px)">
-                <img src="images/アセット2.png">
-            </picture>
-        </li>
+        <ul class="slider">
+            <li>
+                <picture>
+                    <source srcset="images/アセット15.png" media="(max-width:767px)">
+                    <img src="images/アセット2.png">
+                </picture>
+            </li>
 
-        <li>
-            <picture>
-                <source srcset="images/アセット14.png" media="(max-width:767px)">
-                <img src="images/アセット3.png">
-            </picture>
-        </li>
-
-
-    </ul>
-
+            <li>
+                <picture>
+                    <source srcset="images/アセット1.png" media="(max-width:767px)">
+                    <img src="images/アセット3.png">
+                </picture>
+            </li>
+        </ul>
+    </header>
     <!-- ヘッダー固定の部分 -->
     <div class="header_whole2">
         <div class="header_wrap2">
@@ -96,6 +102,29 @@
 
         <div class="about_details1"><span class="about_details">詳しく見る ▶︎</span></div>
     </section>
+
+
+
+    <div class="sp_about">
+        <div class="sp_about_title">
+            <h2>ABOUT</h2>
+            <P class="sp_subtitle">私のご紹介</P>
+        </div>
+        <div class="sp_about_photo"><img src="images/S__14819336.png" alt="プロフィール写真"></div>
+        <div class="sp_about_content">
+            <div class="sp_about_concept">思いをカタチに。</div>
+            <p class="sp_about_introduce">初めまして、Yuiと申します。<br>
+                作成前にコンセプト、デザインイメージの詳細を<br>
+                お聞きし、一緒にデザインを作っていく。<br>
+                デザインの制作過程を共有することで、お客様<br>の不安に思うこと”今どのくらい出来いるのかな。<br>
+                進捗うまいこといっているのかな”をできるだけ取<br>り除いきたい。<br>
+                お客様に寄り添うデザインの制作を心がけてお<br>ります。
+            </p>
+            <!-- <div class="sp_about_photo"><img src="images/S__14819336.png" alt="プロフィール写真"></div> -->
+        </div>
+
+        <div class="sp_about_details1"><span class="sp_about_details">詳しく見る ▶︎</span></div>
+    </div>
 
     <!-- <section id="ABOUT">
     <div class="about_title">
@@ -282,6 +311,30 @@
 
         <p class="footer_designname">© 2022 Yui design.</p>
     </div>
+
+
+    <div class="sp_footer_whole1">
+        <div class="sp_footer_whole">
+            <div class="sp_footer_wrap">
+                <div class="sp_footer_logo">Yuichiro Koide</div>
+                <p>PORTFORIO　SITE</p>
+                <div class="sp_footer_img">
+                    <img src="images/instagram.png" alt="instagram">
+                </div>
+            </div>
+            <div class="sp_footer_menu">
+                <ul>
+                    <li><a href="#ABOUT">about</a></li>
+                    <li><a href="#DESIGN">design</a></li>
+                    <li><a href="#WORKFLOW">workflow</a></li>
+                    <li><a href="#CONTACT">contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer_designname">© 2022 Yui design.</p>
+    </div>
+
 
 
     <script>
