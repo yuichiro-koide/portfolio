@@ -582,9 +582,103 @@ h2 {
     display: none;
 }
 
+.topbutton {
+    width: 125px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    z-index: 100;
+}
+
 @media screen and (max-width: 767px) {
     h2 {
         font-size: 3.9vw;
+    }
+    .grandmenu {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .btn span {
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 23px;
+        transition: 0.3s;
+    }
+
+    .btn span::before,
+    .btn span::after {
+        content: "";
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .btn span::before {
+        bottom: 10px;
+    }
+    .btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+        /* background: #fff;
+        width: 33px;
+        height: 3px; */
+        /* 上の入れたら米印みたいな感じになる */
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+    .open span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
+    .sp_grandmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .sp_grandmenu ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sp_grandmenu li {
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        padding: 10px 0px;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "MS Ｐ明朝", "MS 明朝", serif;
     }
 
     /* about  */
@@ -669,9 +763,40 @@ h2 {
 
     /* フッター */
 
+    .footer_whole1 {
+        display: none;
+    }
+
     .sp_footer_logo {
         text-align: center;
         font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
             "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 10vw;
+        padding-bottom: 22px;
+    }
+
+    .sp_footer_whole1 {
+        background: #9b9b9b;
+        padding-top: 114px;
+        padding-bottom: 52px;
+        color: #fff;
+    }
+
+    .sp_footer_wrap p {
+        text-align: center;
+        font-size: 2.8vw;
+        letter-spacing: 0.68em;
+    }
+
+    .sp_footer_menu {
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .sp_footer_menu ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 }
