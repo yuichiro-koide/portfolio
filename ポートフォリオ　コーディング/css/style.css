@@ -122,26 +122,67 @@ h2 {
 
 .grandmenu_arrows {
     display: flex;
+    justify-content: flex-end;
 }
 
 /* 固定ヘッダー */
 
-.header_wrap2 {
+.sp_header_wrap2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
     box-sizing: border-box;
+    /* text-decoration: underline  2px; */
+    /* border-bottom: solid 2px black; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+.sp_header_logo {
+    font-size: 35px;
+    font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
+        "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.sp_header_grandmenu {
+    display: flex;
+    justify-content: space-between;
+}
+.sp_header_grandmenu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp_header_grandmenu ul li {
+    margin-right: 83px;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+.sp_header_grandmenu ul li :last-child {
+    margin-right: 0px;
+}
+
+/* ? */
+.header_wrap2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
     margin-bottom: 100px;
     padding-bottom: 10px;
+    box-sizing: border-box;
     /* text-decoration: underline  2px; */
     /* border-bottom: solid 2px black; */
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 .header_logo {
-    font-size: 38px;
+    font-size: 3.2vw;
     font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
         "游ゴシック", "Yu Gothic", sans-serif;
+    padding-left: 10px;
 }
 
 .header_grandmenu {
@@ -155,7 +196,7 @@ h2 {
 
 .header_grandmenu ul li {
     margin-right: 83px;
-    font-size: 24px;
+    font-size: 1.75vw;
     font-weight: bold;
 }
 
@@ -174,7 +215,7 @@ h2 {
     text-align: right;
     position: absolute;
     margin: 0 0 120px auto;
-    top: -100px;
+    top: -30px;
     right: -50px;
 }
 
@@ -193,6 +234,7 @@ h2 {
     /* top: 30px;
     right: 30px; */
     margin-right: calc(100vw-1020px) / 2;
+    /* margin-right: calc(calc(100vw - 1020px) / 2); */
 }
 
 /* .about_box {
@@ -206,6 +248,7 @@ h2 {
     /* font-size: 1.17vw; */
     line-height: 1.75;
     color: white;
+    width: 50%;
 }
 
 .about_details {
@@ -241,13 +284,55 @@ h2 {
     max-width: 960px;
     flex-wrap: wrap;
 }
+.design_box1 img {
+    display: flex;
+    align-items: center;
+}
+
+.design_box2 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box3 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box4 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box5 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.design_box6 img {
+    height: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .design_box div {
-    height: 286px;
-    width: 286px;
+    /* height: 286px;
+    width: 286px; */
     margin-bottom: 50px;
     background: #c2c2c2;
-    max-width: 30%;
+    width: 30%;
+    /* max-width: 30%; */
+    display: flex;
+    align-items: center;
 }
 
 .design_whole {
@@ -256,7 +341,7 @@ h2 {
 
 .design_details {
     background: #c2c2c2;
-    padding: 21px 125px;
+    padding: 21px 50px;
     border-radius: 100vh;
     height: 100px;
 }
@@ -281,7 +366,8 @@ h2 {
 }
 
 .workflow_step {
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
     text-align: center;
     width: 20%;
 }
@@ -389,6 +475,7 @@ h2 {
         padding-top: 16px;
         padding-bottom: 16px;
         flex-wrap: wrap;
+        box-sizing: border-box;
     }
 }
 /* .Form-Item:nth-child(5) {
@@ -520,12 +607,12 @@ h2 {
 .footer_whole {
     display: flex;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
 .footer_logo {
-    font-size: 38px;
+    font-size: 2.78vw;
     font-family: "Trattatello", "游ゴシック Medium", "Yu Gothic Medium",
         "游ゴシック", "Yu Gothic", sans-serif;
     padding-bottom: 10px;
@@ -599,89 +686,38 @@ h2 {
     z-index: 100;
 }
 
-@media screen and (max-width: 767px) {
-    h2 {
-        font-size: 3.9vw;
-    }
-    .grandmenu {
-        display: none;
+.sp_footer_whole1 {
+    display: none;
+}
+
+.sp_grandmenu {
+    display: none;
+    z-index: 100;
+}
+
+.sp_header_whole2 {
+    display: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    background: #fff;
+    height: 46px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .about_concept {
+        font-size: 30px;
     }
 
-    .btn {
-        display: block;
-    }
-
-    .btn span {
-        background: #fff;
-        width: 33px;
-        height: 3px;
-        display: block;
-        position: relative;
-        top: 23px;
-        transition: 0.3s;
-    }
-
-    .btn span::before,
-    .btn span::after {
-        content: "";
-        background: #fff;
-        width: 33px;
-        height: 3px;
-        display: block;
-        position: absolute;
-        transition: 0.3s;
-    }
-    .btn span::before {
-        bottom: 10px;
-    }
-    .btn span::after {
-        top: 10px;
-    }
-
-    .open span {
-        background: transparent;
-        /* background: #fff;
-        width: 33px;
-        height: 3px; */
-        /* 上の入れたら米印みたいな感じになる */
-    }
-
-    .open span::before {
-        transform: rotate(45deg);
-        bottom: 0px;
-    }
-    .open span::after {
-        transform: rotate(135deg);
-        top: 0px;
-    }
-
-    .sp_grandmenu {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.7);
-    }
-
-    .sp_grandmenu ul {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .sp_grandmenu li {
-        text-align: center;
-        color: #fff;
-        font-size: 17px;
-        padding: 10px 0px;
-        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
-            "MS Ｐ明朝", "MS 明朝", serif;
-    }
-
-    /* about  */
+    .about_photo img {
+        padding-left: 10px;
+    } */
 
     #ABOUT {
         display: none;
@@ -728,7 +764,7 @@ h2 {
 
     .sp_about_details {
         background: #c2c2c2;
-        padding: 21px 125px;
+        padding: 21px 50px;
         border-radius: 100vh;
         height: 100px;
     }
@@ -737,13 +773,180 @@ h2 {
         margin-bottom: 66px;
         padding-top: 47px;
     }
+}
+
+@media screen and (max-width: 767px) {
+    .fixed {
+        display: none;
+    }
+
+    .sp_header_whole2 {
+        display: block;
+    }
+    .header_wrap2 {
+        display: none;
+    }
+
+    h2 {
+        font-size: 3.9vw;
+    }
+    .grandmenu {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー */
+
+    .btn {
+        display: block;
+        z-index: 120;
+    }
+
+    .btn span {
+        background: black;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 23px;
+        transition: 0.3s;
+    }
+
+    .btn span::before,
+    .btn span::after {
+        content: "";
+        background: black;
+        width: 33px;
+        height: 3px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .btn span::before {
+        bottom: 10px;
+    }
+    .btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+        /* background: #fff;
+        width: 33px;
+        height: 3px; */
+        /* 上の入れたら米印みたいな感じになる */
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+    .open span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
+    .sp_grandmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 110;
+    }
+
+    .sp_grandmenu ul {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sp_grandmenu li {
+        text-align: center;
+        color: #fff;
+        font-size: 17px;
+        padding: 10px 0px;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "MS Ｐ明朝", "MS 明朝", serif;
+    }
+
+    /* about  */
+    /* 
+    #ABOUT {
+        display: none;
+    }
+
+    .sp_about_title {
+        text-align: center;
+    }
+
+    .sp_about {
+        display: block;
+    }
+
+    .sp_about_photo {
+        text-align: center;
+    }
+
+    .sp_about_photo img {
+        width: 204px;
+        margin-bottom: -100px;
+        margin-top: 49px;
+    }
+
+    .sp_about_content {
+        background: #349ace;
+        padding-top: 165px;
+        padding-bottom: 48px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .sp_about_concept {
+        font-size: 4.95vw;
+        padding-bottom: 36px;
+    }
+    .sp_about_introduce {
+        font-size: 1.95vw;
+        line-height: 1.86;
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .sp_about_details {
+        background: #c2c2c2;
+        padding: 21px 125px;
+        border-radius: 100vh;
+        height: 100px;
+    }
+    .sp_about_details1 {
+        text-align: center;
+        margin-bottom: 66px;
+        padding-top: 47px;
+    } */
 
     /* design  */
+
+    .design_box div {
+        margin-bottom: 50px;
+        background: #c2c2c2;
+        width: 48%;
+        /* max-width: 30%; */
+    }
+
+    /* .design_box {
+        display: block;
+        align-items: center;
+    } */
 
     /* workflow */
 
     .workflow_whole {
         display: block;
+        width: 50%;
     }
 
     .workflow_step {
@@ -751,6 +954,9 @@ h2 {
         text-align: center;
         width: 100%;
     }
+    /* .workflow_step:last-child {
+        margin-right: 0px;
+    } */
 
     .workflow_contents {
         font-size: 1.9vw;
@@ -775,7 +981,15 @@ h2 {
         padding-bottom: 22px;
     }
 
+    .sp_footer_img {
+        text-align: right;
+        width: 80%;
+        padding-bottom: 30px;
+        /* ちょっと左に動かしたいときどうすればいいの？ */
+    }
+
     .sp_footer_whole1 {
+        display: block;
         background: #9b9b9b;
         padding-top: 114px;
         padding-bottom: 52px;
@@ -786,17 +1000,27 @@ h2 {
         text-align: center;
         font-size: 2.8vw;
         letter-spacing: 0.68em;
+        padding-bottom: 53px;
     }
 
     .sp_footer_menu {
+        font-size: 6.9vw;
         display: flex;
-        margin: 0 auto;
-        flex-wrap: wrap;
+        margin: auto;
+        width: 60%;
+        justify-content: space-between;
+        padding-bottom: 46px;
+    }
+    .sp_footer_menu_about {
+        padding-bottom: 30px;
+    }
+    .sp_footer_menu_workflow {
+        padding-bottom: 30px;
     }
 
-    .sp_footer_menu ul {
+    /* .sp_footer_menu ul {
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
-    }
+    } */
 }

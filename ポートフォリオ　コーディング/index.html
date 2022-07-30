@@ -21,6 +21,33 @@
 </head>
 
 <body>
+    <div class="btn">
+        <span></span>
+    </div>
+    <nav class="sp_grandmenu">
+        <ul>
+            <li><a href="#ABOUT">about</a></li>
+            <li><a href="#DESIGN">design</a></li>
+            <li><a href="#WORKFLOW">workflow</a></li>
+            <li><a href="#CONTACT">contact</a></li>
+        </ul>
+    </nav>
+    <!-- スマホ用 -->
+    <div class="sp_header_whole2">
+        <div class="sp_header_wrap2">
+            <div class="sp_header_logo">Yuichiro Koide</div>
+            <!-- <nav class="sp_header_grandmenu">
+                <ul>
+                    <li><a href="#ABOUT">About</a></li>
+                    <li><a href="#DESIGN">Design</a></li>
+                    <li><a href="#WORKFLOW">WorkFlow</a></li>
+                    <li><a href="#CONTACT">Contact</a></li>
+                </ul>
+            </nav> -->
+        </div>
+    </div>
+
+
     <!-- ヘッダー -->
     <header class="test">
         <div class="header_wrap">
@@ -50,17 +77,17 @@
         </ul>
 
         <!-- スマホハンバーガーメニュー -->
-        <div class="btn">
+        <!-- <div class="btn">
             <span></span>
-        </div>
-        <nav class="sp_grandmenu">
+        </div> -->
+        <!-- <nav class="sp_grandmenu">
             <ul>
                 <li><a href="#ABOUT">about</a></li>
                 <li><a href="#DESIGN">design</a></li>
                 <li><a href="#WORKFLOW">workflow</a></li>
                 <li><a href="#CONTACT">contact</a></li>
             </ul>
-        </nav>
+        </nav> -->
 
         <ul class="slider">
             <li>
@@ -113,7 +140,7 @@
         </div>
         <!-- <div class="about_photo"><img src="images/S__14819336.png" alt="プロフィール写真"></div> -->
 
-        <div class="about_details1"><span class="about_details">詳しく見る ▶︎</span></div>
+        <div class="about_details1"><span class="about_details"><a href="about.html">詳しく見る ▶︎</a></span></div>
     </section>
 
 
@@ -136,7 +163,7 @@
             <!-- <div class="sp_about_photo"><img src="images/S__14819336.png" alt="プロフィール写真"></div> -->
         </div>
 
-        <div class="sp_about_details1"><span class="sp_about_details">詳しく見る ▶︎</span></div>
+        <div class="sp_about_details1"><span class="sp_about_details"><a href="about.html">詳しく見る ▶︎</a></span></div>
     </div>
 
     <!-- <section id="ABOUT">
@@ -167,12 +194,12 @@
                 <P class="subtitle">制作実績をご紹介します。</P>
             </div>
             <div class="design_box">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="design_box1"><img src="images/creative1.png" alt="PCモックアップ写真"></div>
+                <div class="design_box2"><img src="images/creative2.png" alt="タブレットモックアップ写真"></div>
+                <div class="design_box3"><img src="images/creative3.png" alt="スマホモックアップ写真"></div>
+                <div class="design_box4"><img src="images/creative4.png" alt="スマホ線路"></div>
+                <div class="design_box5"><img src="images/creative5.png" alt="リーフレット"></div>
+                <div class="design_box6"><img src="images/creative6.png" alt="ライター"></div>
             </div>
 
             <div class="design_details1"><span class="design_details">さらに表示する ▶︎</span></div>
@@ -328,20 +355,30 @@
 
     <div class="sp_footer_whole1">
         <div class="sp_footer_whole">
+            <div class="sp_footer_img">
+                <img src="images/instagram.png" alt="instagram">
+            </div>
             <div class="sp_footer_wrap">
                 <div class="sp_footer_logo">Yuichiro Koide</div>
                 <p>PORTFORIO　SITE</p>
-                <div class="sp_footer_img">
-                    <img src="images/instagram.png" alt="instagram">
-                </div>
+
             </div>
             <div class="sp_footer_menu">
-                <ul>
+                <!-- <ul>
                     <li><a href="#ABOUT">about</a></li>
                     <li><a href="#DESIGN">design</a></li>
                     <li><a href="#WORKFLOW">workflow</a></li>
                     <li><a href="#CONTACT">contact</a></li>
-                </ul>
+                </ul> -->
+
+                <div class="sp_footer_menu_a">
+                    <div class="sp_footer_menu_about"><a href="#ABOUT">about</a></div>
+                    <div class="sp_footer_menu_design"><a href=" #DESIGN">design</a></div>
+                </div>
+                <div class="sp_footer_menu_b">
+                    <div class="sp_footer_menu_workflow"><a href="#WORKFLOW">workflow</a></div>
+                    <div class="sp_footer_menu_contact"><a href="#CONTACT">contact</a></div>
+                </div>
             </div>
         </div>
 
@@ -352,6 +389,13 @@
 
     <script>
         $(function () {
+
+            $('.btn,.sp_nav a').click(function () {
+                $('.sp_grandmenu').fadeToggle();
+                $('.btn').toggleClass('open');
+            });
+
+
             $('.slider').slick({
                 autoplay: true,
                 autoplaySpeed: 2000,
@@ -359,6 +403,18 @@
                 arrows: false,
 
             });
+
+            var height = $('.header_whole2').offset().top;
+            $(window).on('load scroll', function () {
+                var value = $(this).scrollTop();
+                if (value > height) {
+                    $('.header_whole2').addClass('fixed');
+                } else {
+                    $nav.removeClass('fixed');
+                }
+
+            });
+
         });
 
 
